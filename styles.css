@@ -1,0 +1,284 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    overflow-x: hidden;
+}
+
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+main{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+footer{
+    background-color: #13183F;
+    height: 120px;
+}
+
+header h1{
+    color: #13183F;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    width: 89px;
+}
+
+main h1{
+    color: #13183F;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    width: 100%;
+    margin: 6px 0 26px 0;
+}
+
+h2{
+    color: #13183F;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25.2px;
+    margin: 22px auto 16px 28px;
+}
+
+.description{
+    color: #83869A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    width: 286px;
+    margin: 0 28px 24px 28px;
+}
+
+.main{
+    margin-left: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+footer h1{
+    color: white;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35.3px;
+}
+
+.fieldset{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 44px;
+}
+
+#business{
+    margin-bottom: 80px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+header button{
+    color: white;
+    background-color: #13183F;
+    border: 0;
+    border-radius: 28px;
+    width: 140px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+#main-button{
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    color: white;
+    width: 167px;
+    height: 56px;
+    border: 0;
+    border-radius: 31.5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+.check-button{
+    width: 343px;
+    height: 120px;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    color: white;
+    text-align: left;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 26px;
+    margin-bottom: 44px;
+}
+
+.get-started{
+    color: #F74780;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto 32px 28px;
+    border: 0;
+    background-color: unset;
+    cursor: pointer;
+}
+
+#footer-button{
+    color: white;
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    border: 0;
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    width: 140px;
+    height: 48px;
+    cursor: pointer;
+}
+
+#hero{
+   width: 100%;
+}
+
+.icons{
+    margin-top: -28px;
+    margin-left: 28px;
+}
+
+/*  tablet resolution */
+
+
+@media (min-width: 768px){
+    body{
+        background-image: url('./resources/assets/image-hero-tablet@2x.png');
+        background-size: 700px 700px;
+        background-repeat: no-repeat;
+        background-position: top -70px right -300px;
+    }
+
+    header, main, footer{
+        padding: 39px;
+    }
+
+    footer{
+        padding: 0 39px 0 39px;
+    }
+
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .fieldset{
+        width: 340px;
+        height: 259px;
+    }
+
+    .txt-container{
+        width: 55%;
+    }
+
+    #hero{
+        display: none;
+    }   
+
+    .check-button{
+        width: 340px;
+        height: 259px;
+    }
+
+    #main-button{
+        margin-bottom: 210px;
+    }
+}
+
+
+/*  desktop resolution  */
+
+
+@media (min-width: 1024px){
+    body{
+        background-image: url('./resources/assets/image-hero-desktop@2x.png');
+        background-size: 991px 936px;
+        background-repeat: no-repeat;
+        background-position: top -200px right -370px;
+    }
+
+    header, main{
+        padding: 45px 165px;
+    }
+
+    footer{
+        padding: 0 165px 0 165px;
+    }
+
+    .introduction{
+        display: flex;
+    }
+
+    .fieldset{
+        width: 340px;
+        height: 259px;
+    }
+
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    #hero{
+        width: 400px;
+    }
+
+    .check-button{
+        width: 340px;
+        height: 259px;
+    }
+
+    #main-button{
+        margin-bottom: 250px;
+    }
+
+    
+
+    /* desktop active */
+
+    header button:hover{
+        background-color: #666CA3;
+    }
+
+    #main-button:hover{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                    linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    }
+
+    .get-started:hover{
+        color: #FFA7C3;
+    }
+
+    #footer-button:hover{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                    linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    }
+}
